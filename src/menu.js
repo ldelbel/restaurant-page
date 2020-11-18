@@ -8,15 +8,16 @@ const menu = () => {
   card.className = `card${i}`;
 
   let image = document.createElement('div');
-  image.className = `card${i}__img`;
+  image.className = `cd__img${i}`;
 
   let caption = document.createElement('div');
-  caption.className = `card${i}__caption`;
+  caption.id = `cd__caption${i}`;
 
   card.appendChild(image);
   card.appendChild(caption);
   cards.appendChild(card);
   }
+
 
 
   return cards;

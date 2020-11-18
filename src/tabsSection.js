@@ -1,3 +1,5 @@
+import menu from './menu'
+
 const tabsSection = () => { 
   const tabs = document.createElement("section");
   tabs.className = "tabs-section";
@@ -7,7 +9,7 @@ const tabsSection = () => {
       tab1.setAttribute('type','radio');
       tab1.className = 'tab';
       tab1.id = 'tab1';
-      tab1.name = 'tabGroup1';        
+      tab1.name = 'tabGroup1';
       tab1.checked = true;
     const tab2 = document.createElement('input');
       tab2.setAttribute('type','radio');
@@ -28,7 +30,8 @@ const tabsSection = () => {
   tabsWrap.appendChild(lab1);
   tabsWrap.appendChild(tab2);
   tabsWrap.appendChild(lab2);
-  tabsWrap.appendChild(tabContent);  
+  tabsWrap.appendChild(tabContent);
+  tabContent.appendChild(menu());
   tabs.appendChild(tabsWrap);
 
   return tabs;
