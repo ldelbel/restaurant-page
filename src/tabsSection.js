@@ -17,10 +17,10 @@ const tabsSection = () => {
       tab2.checked = true;
     const lab1 = document.createElement('label');
       lab1.setAttribute('for','tab1');
-      lab1.innerHTML = 'Section One';
+      lab1.innerHTML = 'Menu';
     const lab2 = document.createElement('label');
       lab2.setAttribute('for','tab2');
-      lab2.innerHTML = 'Section Two';
+      lab2.innerHTML = 'Contact';
     const tabContent = document.createElement('div');
     tabContent.className = 'tab__content';
 

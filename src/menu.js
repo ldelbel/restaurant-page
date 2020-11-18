@@ -1,13 +1,25 @@
 const menu = () => {
-  let parent = document.getElementsByClassName('tab-wrap');
-  parent.innerHTML = ''
-  let content = document.createElement('div').className('tab__content');
-  content.innerHTML += `<h3>Section One</h3>`;
-  content.innerHTML = `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`;
-  parent.appendChild(content);
 
+  let cards = document.createElement('div');
+  cards.className = 'cards-content';
+  
+  for(let i = 1; i < 10; i++) {
+  let card = document.createElement('div');
+  card.className = `card${i}`;
+
+  let image = document.createElement('div');
+  image.className = `card${i}__img`;
+
+  let caption = document.createElement('div');
+  caption.className = `card${i}__caption`;
+
+  card.appendChild(image);
+  card.appendChild(caption);
+  cards.appendChild(card);
+  }
+
+
+  return cards;
 }
+
+export default menu;
