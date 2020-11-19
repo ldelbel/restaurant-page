@@ -2,6 +2,8 @@ import nav from "./nav"
 import firstSection from "./firstSection"
 import aboutSection from "./aboutSection"
 import tabsSection from "./tabsSection"
+import menu from "./menu"
+import contact from "./contact"
 
 let content = document.getElementById('content');
 content.appendChild(nav());
@@ -9,24 +11,59 @@ content.appendChild(firstSection());
 content.appendChild(aboutSection());
 content.appendChild(tabsSection());
 
-let caption1 = document.getElementById('cd__caption1');
-let caption2 = document.getElementById('cd__caption2');
-let caption3 = document.getElementById('cd__caption3');
-let caption4 = document.getElementById('cd__caption4');
-let caption5 = document.getElementById('cd__caption5');
-let caption6 = document.getElementById('cd__caption6');
-let caption7 = document.getElementById('cd__caption7');
-let caption8 = document.getElementById('cd__caption8');
-let caption9 = document.getElementById('cd__caption9');
-caption1.innerHTML = 'Mexican Salad';
-caption2.innerHTML = 'Buddha Bowl';
-caption3.innerHTML = 'Caesar Salad';
-caption4.innerHTML = 'Poke Salad';
-caption5.innerHTML = 'Shrimp Bowl';
-caption6.innerHTML = 'Italian Salad';
-caption7.innerHTML = 'Tropical Fruit Punch';
-caption8.innerHTML = 'Red Berries Bowl';
-caption9.innerHTML = 'Veggie Burguer';
+let tabContent = document.getElementById('tab__content');
+
+
+let tab1 = document.getElementById('tab1');
+tab1.addEventListener('click', () => {
+  tabContent.innerHTML = '';
+  tabContent.appendChild(menu());
+
+  for(let i = 1; i < 10; i++) {
+    let caption = document.getElementById(`cd__caption${i}`);
+    switch(i) {
+      case 1:
+        caption.innerHTML = 'Mexican Salad';
+        break;
+      case 2:
+        caption.innerHTML = 'Buddha Bowl';
+        break;
+      case 3:
+        caption.innerHTML = 'Caesar Salad';
+        break;
+      case 4:
+        caption.innerHTML = 'Poke Salad';
+        break;
+      case 5:
+        caption.innerHTML = 'Shrimp Bowl';
+        break;
+      case 6:
+        caption.innerHTML = 'Italian Salad';
+        break;
+      case 7:
+        caption.innerHTML = 'Tropical Fruit Punch';
+        break; 
+      case 8:
+        caption.innerHTML = 'Red Berries Bowl';
+        break;
+      case 9:
+        caption.innerHTML = 'Veggie Burguer';
+        break;
+    }
+  }
+})
+
+let tab2 = document.getElementById('tab2');
+tab2.addEventListener('click', () => {
+  tabContent.innerHTML = '';
+  tabContent.appendChild(contact());
+})
+
+
+
+
+
+
 
 
 

@@ -18,8 +18,6 @@ const menu = () => {
   cards.appendChild(card);
   }
 
-
-
   return cards;
 }
 

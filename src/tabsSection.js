@@ -25,13 +25,13 @@ const tabsSection = () => {
       lab2.innerHTML = 'Contact';
     const tabContent = document.createElement('div');
     tabContent.className = 'tab__content';
+    tabContent.id = 'tab__content';
 
   tabsWrap.appendChild(tab1);
   tabsWrap.appendChild(lab1);
   tabsWrap.appendChild(tab2);
   tabsWrap.appendChild(lab2);
   tabsWrap.appendChild(tabContent);
-  tabContent.appendChild(menu());
   tabs.appendChild(tabsWrap);
 
   return tabs;
