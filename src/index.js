@@ -1,27 +1,27 @@
-import nav from "./nav"
-import firstSection from "./firstSection"
-import aboutSection from "./aboutSection"
-import tabsSection from "./tabsSection"
-import menu from "./menu"
-import contact from "./contact"
+import nav from './nav';
+import firstSection from './firstSection';
+import aboutSection from './aboutSection';
+import tabsSection from './tabsSection';
+import menu from './menu';
+import contact from './contact';
 
-let content = document.getElementById('content');
+const content = document.getElementById('content');
 content.appendChild(nav());
 content.appendChild(firstSection());
 content.appendChild(aboutSection());
 content.appendChild(tabsSection());
 
-let tabContent = document.getElementById('tab__content');
+const tabContent = document.getElementById('tab__content');
 
 
-let tab1 = document.getElementById('tab1');
+const tab1 = document.getElementById('tab1');
 tab1.addEventListener('click', () => {
   tabContent.innerHTML = '';
   tabContent.appendChild(menu());
 
-  for(let i = 1; i < 10; i++) {
-    let caption = document.getElementById(`cd__caption${i}`);
-    switch(i) {
+  for (let i = 1; i < 10; i += 1) {
+    const caption = document.getElementById(`cd__caption${i}`);
+    switch (i) {
       case 1:
         caption.innerHTML = 'Mexican Salad';
         break;
@@ -42,29 +42,21 @@ tab1.addEventListener('click', () => {
         break;
       case 7:
         caption.innerHTML = 'Tropical Fruit Punch';
-        break; 
+        break;
       case 8:
         caption.innerHTML = 'Red Berries Bowl';
         break;
       case 9:
         caption.innerHTML = 'Veggie Burguer';
         break;
+      default:
+        caption.innerHTML = 'Salad';
     }
   }
-})
+});
 
-let tab2 = document.getElementById('tab2');
+const tab2 = document.getElementById('tab2');
 tab2.addEventListener('click', () => {
   tabContent.innerHTML = '';
   tabContent.appendChild(contact());
-})
-
-
-
-
-
-
-
-
-
-
+});

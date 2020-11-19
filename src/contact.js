@@ -1,22 +1,22 @@
 const contact = () => {
-  let form = document.createElement('form');
+  const form = document.createElement('form');
   form.className = 'form-style-8';
-  
-  let nameInput = document.createElement('input');
+
+  const nameInput = document.createElement('input');
   nameInput.type = 'text';
   nameInput.name = 'field1';
   nameInput.placeholder = 'Full name';
-  
-  let emailInput = document.createElement('input');
+
+  const emailInput = document.createElement('input');
   emailInput.type = 'email';
   emailInput.name = 'field2';
   emailInput.placeholder = 'Email';
 
-  let messageInput = document.createElement('textarea');
+  const messageInput = document.createElement('textarea');
   messageInput.placeholder = 'Message';
   messageInput.setAttribute('onkeyup', 'adjust_textarea(this)');
 
-  let submit = document.createElement('input');
+  const submit = document.createElement('input');
   submit.type = 'button';
   submit.value = 'Send Message';
 
@@ -26,6 +26,6 @@ const contact = () => {
   form.appendChild(submit);
 
   return form;
-}
+};
 
 export default contact;
