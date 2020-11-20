@@ -15,9 +15,9 @@
 
 This project is a simple restaurant page where the user can access the menu and contact form. The features are dynamic due to Javascript, and the packaging is managed by Webpack.
 
-  ![screenshot](screen1.png) 
+  ![screenshot](images/screen1.png) 
   
-  ![screenshot](screen2.png) 
+  ![screenshot](images/screen2.png) 
 
 ## 🔧 Built with<a name = "with"></a>
 
