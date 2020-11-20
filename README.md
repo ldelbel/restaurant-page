@@ -28,7 +28,7 @@ This project is a simple restaurant page where the user can access the menu and 
 
 ## 🔴 Live Demo <a name = "ldl"></a>
 
-[Live Demo](https://ldelbel.github.io/restaurant-page/)
+[Live Demo](https://rawcdn.githack.com/ldelbel/restaurant-page/feature/full_project/dist/index.html)
 
 ## 🔨 Setup
 
