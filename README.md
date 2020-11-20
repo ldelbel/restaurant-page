@@ -1,74 +1,61 @@
-# Project Name
+# Restaurant Page - Javascript
+  
+[![View Code](https://img.shields.io/badge/View%20-Code-green)]()
+[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)]()
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)]()
 
-> One paragraph statement about the project.
+## Content
 
-![screenshot](./app_screenshot.png)
+<a text-align="center" href="#about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#ldl">Live Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#author">Author</a>
 
-Additional description about the project and its features.
+## About <a name = "about"></a>
 
-## Built With
+This project is a simple restaurant page where the user can access the menu and contact form. The features are dynamic due to Javascript, and the packaging is managed by Webpack.
 
-- Major languages,
-- frameworks,
-- technologies used
+  ![screenshot](images/screen1.png) 
+  
+  ![screenshot](images/screen2.png) 
 
-## Live Demo
+## 🔧 Built with<a name = "with"></a>
 
-[Live Demo Link](https://livedemo.com)
+- HTML5
+- CSS3
+- Javascript
+- Webpack
 
+## 🔴 Live Demo <a name = "ldl"></a>
 
-## Getting Started
+[Live Demo](https://ldelbel.github.io/restaurant-page/)
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+## 🔨 Setup
 
+To get a local copy of the repository please run the following commands on your terminal:
 
-To get a local copy up and running follow these simple example steps.
+```bash
+$ git clone https://github.com/ldelbel/restaurant-page
+$ cd library-javascript
+$ run npm build
+```
 
-### Prerequisites
+## ✒️  Author <a name = "author"></a>
 
-### Setup
+👤 **Lucas Delbel**
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@ldelbel](https://github.com/ldelbel)
+- Twitter: [@delbel_lucas](https://twitter.com/delbel_lucas)
+- Linkedin: [lucasdelbel](https://www.linkedin.com/in/lucasdelbel/)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page]().
 
-## Show your support
+
+## 👍 Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](lic.url) licensed.
